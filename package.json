@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@xstyled/styled-components": "^2.2.0",
+    "docz": "^2.3.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
@@ -15,6 +16,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
