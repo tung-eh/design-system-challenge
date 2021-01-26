@@ -1,4 +1,5 @@
 import * as MdIcons from 'react-icons/md'
+import React from 'react';
 import styled from '@xstyled/styled-components'
 
 const capitalize = (name) => {
