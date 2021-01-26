@@ -1,17 +1,10 @@
-import {
-  defaultTheme,
-  ThemeProvider,
-  Preflight,
-} from '@xstyled/styled-components'
+import { ThemeProvider, Preflight } from '@xstyled/styled-components'
+import React from 'react'
 
 import Button from './atoms/Button'
 import Icon from './atoms/Icon'
 import Input from './atoms/Input'
-
-const theme = {
-  ...defaultTheme,
-  // Customize theme here
-}
+import theme from './theme'
 
 function App() {
   return (
