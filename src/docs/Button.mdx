@@ -1,6 +1,7 @@
 ---
 name: Button
 route: /button
+menu: Components
 ---
 
 import { Playground } from 'docz'
@@ -11,6 +12,55 @@ import Button from '../atoms/Button'
 ## Basic usage
 
 <Playground>
-  <Button>Click me</Button>
-  <Button kind="secondary">Click me</Button>
+  <Button>Default</Button>
+</Playground>
+
+## Colors
+
+<Playground>
+  <Button color="primary" mr={4}>Primary</Button>
+  <Button color="secondary" mr={4}>Secondary</Button>
+  <Button color="success" mr={4}>Success</Button>
+  <Button color="warning" mr={4}>Warning</Button>
+  <Button color="danger" mr={4}>Danger</Button>
+</Playground>
+
+## Outline
+
+<Playground>
+  <Button variant="outline" mr={4}>Default</Button>
+  <Button color="primary" variant="outline" mr={4}>Primary</Button>
+  <Button color="secondary" variant="outline">Secondary</Button>
+</Playground>
+
+## Text
+
+<Playground>
+  <Button variant="text" mr={4}>Default</Button>
+  <Button color="primary" variant="text" mr={4}>Primary</Button>
+  <Button color="secondary" variant="text">Secondary</Button>
+</Playground>
+
+## Sizes
+
+<Playground>
+  <Button color="primary" size="sm" mr={4}>Small</Button>
+  <Button color="primary" size="md" mr={4}>Medium</Button>
+  <Button color="primary" size="lg">Large</Button>
+</Playground>
+
+## With Icon
+
+<Playground>
+  <Button color="primary" startIcon="local_grocery_store" mr={4}>Start Icon</Button>
+  <Button color="primary" variant="outline" endIcon="local_grocery_store">End Icon</Button>
+</Playground>
+
+## Disabled 
+
+<Playground>
+  <Button disabled mr={4}>Default</Button>
+  <Button color="primary" disabled mr={4}>Primary</Button>
+  <Button color="primary" variant="outline" disabled mr={4}>Outline</Button>
+  <Button color="primary" variant="text" disabled>Text</Button>
 </Playground>
