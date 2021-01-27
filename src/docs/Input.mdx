@@ -1,0 +1,64 @@
+---
+name: Input
+route: /input
+menu: Components
+---
+
+import { Playground } from 'docz'
+import Input from '../atoms/Input'
+
+# Input
+
+## Basic usage
+
+<Playground>
+  <Input label="Label" placeholder="Type something ..." />
+</Playground>
+
+## Error
+
+<Playground>
+  <Input label="Label" placeholder="Type something ..." error />
+</Playground>
+
+## Disabled
+
+<Playground>
+  <Input label="Label" placeholder="Type something ..." disabled />
+</Playground>
+
+## Helper text
+
+<Playground>
+  <Input label="Label" placeholder="Type something ..." helpText="Some helpful information here" />
+  <Input label="Label" placeholder="Type something ..." helpText="Some helpful information here" error />
+</Playground>
+
+## With Icon
+
+Icons: https://material.io/resources/icons/?style=round
+
+<Playground>
+  <Input label="Label" placeholder="Type something ..." startIcon="phone" />
+  <Input label="Label" placeholder="Type something ..." endIcon="lock" />
+</Playground>
+
+## Sizes
+
+<Playground>
+  <Input label="Label" placeholder="Type something ..." size="sm" />
+  <Input label="Label" placeholder="Type something ..." size="md" />
+  <Input label="Label" placeholder="Type something ..." size="lg" />
+</Playground>
+
+## Full width
+
+<Playground>
+  <Input label="Label" placeholder="Type something ..." fullWidth />
+</Playground>
+
+## Multiple lines
+
+<Playground>
+  <Input label="Label" placeholder="Type something ..." multiline rows={4} />
+</Playground>
